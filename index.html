@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teclado de Miel — Demo</title>
+  <meta name="description" content="Teclado de miel: sitio estático con animaciones 3D, partículas y microinteracciones (HTML/CSS/JS)." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Canvas de fondo para partículas -->
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <main class="stage" role="main">
+    <section class="hero">
+      <div class="panel">
+        <h1 class="title">Teclado de Miel</h1>
+        <p class="subtitle">Interacción 3D, brillo líquido y microanimaciones — diseñado para retener.</p>
+
+        <div id="keyboard" class="keyboard" aria-label="Teclado interactivo">
+          <!-- keys se generan desde script.js para mantener HTML limpio -->
+        </div>
+
+        <div class="controls">
+          <button id="demoBtn" class="btn" aria-pressed="false">▶ Reproducir demo</button>
+          <a class="btn ghost" href="#" id="downloadHint">Copiar/Desplegar →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <small>HTML • CSS • JavaScript — Optimizado móvil. Presiona cualquier tecla (o toca) para ver respuesta.</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
